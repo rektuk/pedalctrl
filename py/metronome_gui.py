@@ -6,7 +6,7 @@ import configparser
 
 config = configparser.ConfigParser()
 config.read("../etc/config.ini")
-API_URL = config.get('app', 'API_URL')
+API_URL = config.get('metronome_srv', 'API_URL')
 
 # --- Session State ---
 if "bpm" not in st.session_state:
