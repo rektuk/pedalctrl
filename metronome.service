@@ -1,0 +1,12 @@
+[Unit]
+Description=Streamlit Metronome App
+After=network.target
+
+[Service]
+User=nbeglm
+WorkingDirectory=/home/nbeglm/pedalcontroller
+ExecStart=/bin/bash -c './start.sh'
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
