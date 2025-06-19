@@ -1,0 +1,12 @@
+[Unit]
+Description=Streamlit Metronome Backend Service
+After=network.target
+
+[Service]
+User=nbeglm
+WorkingDirectory=/home/nbeglm/pedalctrl/bin
+ExecStart=/bin/bash -c './metronome_gui.sh'
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
